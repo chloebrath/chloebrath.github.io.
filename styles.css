@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.parallax {
+  height: 100vh;
+  background-color: #000000;
+}
+
+.parallax img {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: 900;
+  color: white
+}
+
+.bio {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.header {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 33px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1rem; 
+  border-radius: 5px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 100px auto;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+}
+
+.text-box{
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 16px;
+  background:rgba(192, 192, 192, 0.6);
+}
+
+.left-container{
+  left: 0;
+  text-align: left;
+}
+
+.right-container{
+  left: 50%;
+  text-align: right;
+}
+
+.left-container img {
+  position: absolute;
+  width: 60px;
+  border-radius: 50%;
+  right: -20px;
+  top: 20px;
+  z-index: 10;
+}
+
+.right-container img {
+  position: absolute;
+  width: 60px;
+  border-radius: 50%;
+  left: -20px;
+  top: 20px;
+  z-index: 10;
+}
+
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: black;
+  left: 50%;
+  top: 0;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.left-container-arrow{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 22px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid rgba(192, 192, 192, 0.6);
+  right: -15px;
+}
+
+.right-container-arrow{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 22px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid rgba(192, 192, 192, 0.6);
+  left: -15px;
+  rotate: 180deg;
+}
